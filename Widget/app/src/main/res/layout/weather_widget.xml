@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="720px"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#00ffffff">
+    <RelativeLayout
+        android:id="@+id/daylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+        <!--<TextView android:id="@+id/wed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff737373"
+            android:fontFamily="assets/"
+            android:textSize="8pt"
+            android:layout_alignParentLeft="true"
+            android:text="Wednesday"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#737373"
+            android:fontFamily="sans-serif"
+            android:textSize="7pt"
+            android:layout_alignParentRight="true"
+            android:text="Apr 5"/>-->
+        <!--<ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="700px"
+            android:layout_height="180px"
+            android:background="#ffffffff"
+            android:layout_centerHorizontal="true"/>-->
+        <!--ZA PRIKAZUVANJE NA GRAF ZA CAS PO CAS
+        <ImageView
+            android:id="@+id/hourlyImageView"
+            android:layout_width="700px"
+            android:layout_height="600px"
+            android:background="#ffeeeeee"
+            android:layout_centerHorizontal="true"/>-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ffff33"
+        android:layout_below="@+id/daylist">
+        <ListView
+            android:id="@+id/listview"
+            android:background="#00ffffff"
+            android:layout_width="700px"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp"
+            android:divider="@null">
+
+        </ListView>
+        <!--<GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="1">
+        </GridView>-->
+    </RelativeLayout>
+</RelativeLayout>

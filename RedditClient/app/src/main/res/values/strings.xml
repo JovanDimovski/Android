@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App3</string>
+    <string-array name="subreddits_array">
+        <item>All</item>
+        <item>Android</item>
+        <item>Pics</item>
+    </string-array>
+    <string name="title_activity_comments">CommentsActivity</string>
+</resources>

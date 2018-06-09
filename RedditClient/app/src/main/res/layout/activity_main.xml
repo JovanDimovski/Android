@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:paddingBottom="0dp"
+   android:paddingLeft="0dp"
+   android:paddingRight="0dp"
+   android:paddingTop="0dp"
+   android:id="@+id/lvParent"
+   tools:context=".Old_Unused.MainActivityOld">
+   <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+       android:background="#ff000000"
+      android:id="@+id/loading">
+      <ProgressBar
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:indeterminate="true"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+          android:id="@+id/progress"/>
+   </RelativeLayout>
+   <ListView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#ff333333"
+      android:paddingLeft="0dp"
+      android:paddingRight="0dp"
+      android:id="@+id/lvItems"
+      android:divider="#ff333333"
+      android:dividerHeight="1px"
+   ><!--android:divider="@drawable/list_divider"-->
+
+   </ListView>
+   <android.support.v7.widget.Toolbar
+      android:id="@+id/my_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="55dip"
+      android:background="#ff115050"
+      android:elevation="4dp"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+   <!--<ImageView
+   android:layout_width="180dp"
+   android:layout_height="320dp"
+   android:layout_centerVertical="true"
+   android:layout_centerHorizontal="true"
+   android:background="#66ff0000"
+   />-->
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Widget</string>
+    <string name="item_format_string">%1$d\u00B0 on %2$s</string>
+</resources>

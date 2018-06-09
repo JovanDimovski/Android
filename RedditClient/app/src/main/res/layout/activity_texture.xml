@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    >
+    <com.example.jovan.app3.Utilities.ZoomableRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#22000000"
+        android:id="@+id/zoomview">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#00000000"
+            android:id="@+id/frame_parent">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:id="@+id/rootView">
+    <!--            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="KKKKKKKKKKKKKKKKK"
+                    android:textSize="14pt"
+                    android:background="@android:color/darker_gray"/>-->
+                <TextureView
+                    android:id="@+id/textureView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </com.example.jovan.app3.Utilities.ZoomableRelativeLayout>
+    <ProgressBar
+        android:theme="@style/LinearProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_marginRight="0dp"
+        android:id="@+id/progress"/>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:minHeight="95dip"
+    android:padding="9dp"
+    android:background="#ff111111"
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="83dip"
+        android:layout_height="83dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="9dp"
+        android:background="#ff333333"
+        />
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:textSize="5pt"
+        android:text="Author"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/image"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-medium"
+        android:text="Title"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/author"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff666666"
+        android:text="Points"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:textSize="5pt"
+        android:fontFamily="sans-serif-medium"
+        android:text="Author"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/image"
+        android:layout_toLeftOf="@+id/points"
+        />
+</RelativeLayout>

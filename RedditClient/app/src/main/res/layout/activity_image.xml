@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0000ff"
+    tools:context="com.example.jovan.app3.Activities.ImageActivity">
+
+    <com.example.jovan.app3.Utilities.ZoomableRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff0000"
+        android:id="@+id/zoomview">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff000000">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image"/>
+        </RelativeLayout>
+    </com.example.jovan.app3.Utilities.ZoomableRelativeLayout>
+
+    <ProgressBar
+        android:theme="@style/LinearProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_marginRight="0dp"
+        android:id="@+id/progress"/>
+</RelativeLayout>
